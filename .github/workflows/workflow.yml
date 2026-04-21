@@ -1,0 +1,11 @@
+name: Workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  workflow:
+    steps:
+      run: echo ${{ secrets.SECRET }}
+      run: echo ${{ vars.FOO }}
+      uses: david-haerer/action@main
