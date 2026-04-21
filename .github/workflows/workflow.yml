@@ -9,4 +9,4 @@ jobs:
     steps:
       - run: echo ${{ secrets.SECRET }}
       - run: echo ${{ vars.FOO }}
-      - uses: david-haerer/action@main
+      - uses: david-haerer/action/action1@main
