@@ -5,6 +5,7 @@ on:
 
 jobs:
   workflow:
+    runs-on: ubuntu-latest
     steps:
       run: echo ${{ secrets.SECRET }}
       run: echo ${{ vars.FOO }}
