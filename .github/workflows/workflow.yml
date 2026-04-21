@@ -7,6 +7,6 @@ jobs:
   workflow:
     runs-on: ubuntu-latest
     steps:
-      run: echo ${{ secrets.SECRET }}
-      run: echo ${{ vars.FOO }}
-      uses: david-haerer/action@main
+      - run: echo ${{ secrets.SECRET }}
+      - run: echo ${{ vars.FOO }}
+      - uses: david-haerer/action@main
